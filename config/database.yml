@@ -1,0 +1,25 @@
+default: &default
+
+development:
+  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  database: store
+  pool: 5
+  timeout: 5000
+  username: jeff
+  password: SENHAdojeff12
+
+test:
+  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  database: store_test
+  pool: 5
+  timeout: 5000
+  username: jeff
+  password: SENHAdojeff12
+
+production:
+  <<: *default
+  database: db/production.sqlite3

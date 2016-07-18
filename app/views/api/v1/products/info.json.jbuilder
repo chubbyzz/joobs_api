@@ -1,0 +1,1 @@
+json.(@info, :max, :min)
