@@ -1,14 +1,21 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  it {should have_many :orders}
-  it {should have_many(:products).through(:orders)}
+  it { should belong_to(:profile) }
 
-  it {should validate_presence_of :name}
-  it {should validate_presence_of :zip_code}
-  it {should validate_presence_of :address}
-  it {should validate_presence_of :city}
-  it {should validate_presence_of :state}
-  it {should validate_presence_of :number}
-  it {should validate_presence_of :neighborhood}
+  it 'should verify the profile type' do
+    user = build :company_user
+
+    expect(user.type_equals? 'Company').to be_truthy
+    expect(user.type_equals? 'Applicant').to be_falsey
+    expect(user.type_equals? nil).to be_falsey
+  end
+
+  it 'is a company profile' do
+    user = build :company_user
+    expect(user.is_company?).to be_truthy
+
+    user = build :user
+    expect(user.is_company?).to be_falsey
+  end
 end

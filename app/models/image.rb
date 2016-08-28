@@ -1,5 +1,5 @@
 class Image < ActiveRecord::Base
-  belongs_to :product
+  belongs_to :job
 
   validates :path, presence: true
   validates :path, uniqueness: true

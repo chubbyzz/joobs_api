@@ -1,10 +1,16 @@
 class User < ActiveRecord::Base
-  validates_presence_of :name, :zip_code, :address, :city, :state, :number, :neighborhood
+  belongs_to :profile, polymorphic: true
 
-  has_many :products, through: :orders
-  has_many :orders
   devise :database_authenticatable, :recoverable,
          :trackable, :validatable, :registerable,
          :omniauthable
   include DeviseTokenAuth::Concerns::User
+
+  def type_equals? type
+    self.profile_type == type
+  end
+
+  def is_company?
+    self.type_equals? 'Company'
+  end
 end

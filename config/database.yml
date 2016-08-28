@@ -4,21 +4,17 @@ development:
   <<: *default
   adapter: postgresql
   encoding: unicode
-  database: store
+  database: joobs
   pool: 5
   timeout: 5000
-  username: jeff
-  password: SENHAdojeff12
 
 test:
   <<: *default
   adapter: postgresql
   encoding: unicode
-  database: store_test
+  database: joobs_test
   pool: 5
   timeout: 5000
-  username: jeff
-  password: SENHAdojeff12
 
 production:
   <<: *default

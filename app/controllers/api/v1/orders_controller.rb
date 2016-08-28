@@ -3,8 +3,8 @@ class Api::V1::OrdersController < ApplicationController
 
 
   def create
-    @order = Order.new(user: current_api_v1_user, quantity: params[:quantity])
-    @order.product = Product.friendly.find(params['product'])
+    @order = Application.new(user: current_api_v1_user, quantity: params[:quantity])
+    @order.product = Job.friendly.find(params['product'])
     @order.save
   end
 

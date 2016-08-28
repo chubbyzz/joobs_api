@@ -1,8 +1,7 @@
 FactoryGirl.define do
-  factory :order do
-    quantity 1
+  factory :application do
     status 'pending'
     user
-    product
+    job
   end
 end

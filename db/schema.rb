@@ -11,10 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160718015824) do
+ActiveRecord::Schema.define(version: 20160828013623) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "applications", force: :cascade do |t|
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
+    t.string   "status",       default: "pending"
+    t.integer  "job_id"
+    t.integer  "jobseeker_id"
+  end
+
+  add_index "applications", ["job_id"], name: "index_applications_on_job_id", using: :btree
+  add_index "applications", ["jobseeker_id"], name: "index_applications_on_jobseeker_id", using: :btree
+
+  create_table "companies", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "images", force: :cascade do |t|
     t.string   "path",                       null: false
@@ -26,31 +43,27 @@ ActiveRecord::Schema.define(version: 20160718015824) do
 
   add_index "images", ["product_id"], name: "index_images_on_product_id", using: :btree
 
-  create_table "orders", force: :cascade do |t|
-    t.integer  "product_id"
-    t.integer  "user_id"
-    t.integer  "quantity",   default: 1
-    t.integer  "integer",    default: 1
-    t.datetime "created_at",                     null: false
-    t.datetime "updated_at",                     null: false
-    t.string   "status",     default: "pending"
-  end
-
-  add_index "orders", ["product_id"], name: "index_orders_on_product_id", using: :btree
-  add_index "orders", ["user_id"], name: "index_orders_on_user_id", using: :btree
-
-  create_table "products", force: :cascade do |t|
-    t.string   "name",                          null: false
-    t.float    "price"
-    t.datetime "created_at",                    null: false
-    t.datetime "updated_at",                    null: false
-    t.integer  "discount",          default: 0
+  create_table "jobs", force: :cascade do |t|
+    t.string   "name",                                                  null: false
+    t.datetime "created_at",                                            null: false
+    t.datetime "updated_at",                                            null: false
     t.string   "slug"
     t.string   "small_description"
-    t.integer  "star",              default: 0
+    t.integer  "star",                                      default: 0
+    t.decimal  "start_salary",      precision: 8, scale: 2
+    t.decimal  "until_salary",      precision: 8, scale: 2
+    t.integer  "company_id"
   end
 
-  add_index "products", ["slug"], name: "index_products_on_slug", using: :btree
+  add_index "jobs", ["company_id"], name: "index_jobs_on_company_id", using: :btree
+  add_index "jobs", ["slug"], name: "index_jobs_on_slug", using: :btree
+
+  create_table "jobseekers", force: :cascade do |t|
+    t.string   "cv"
+    t.string   "linkedin"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "provider",               default: "email", null: false
@@ -75,19 +88,17 @@ ActiveRecord::Schema.define(version: 20160718015824) do
     t.json     "tokens"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "zip_code"
-    t.string   "address"
-    t.string   "city"
-    t.string   "state"
-    t.integer  "number"
-    t.string   "neighborhood"
+    t.integer  "profile_id"
+    t.string   "profile_type"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", using: :btree
+  add_index "users", ["profile_id", "profile_type"], name: "index_users_on_profile_id_and_profile_type", using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   add_index "users", ["uid", "provider"], name: "index_users_on_uid_and_provider", unique: true, using: :btree
 
-  add_foreign_key "images", "products"
-  add_foreign_key "orders", "products"
-  add_foreign_key "orders", "users"
+  add_foreign_key "applications", "jobs"
+  add_foreign_key "applications", "jobseekers"
+  add_foreign_key "images", "jobs", column: "product_id"
+  add_foreign_key "jobs", "companies"
 end
