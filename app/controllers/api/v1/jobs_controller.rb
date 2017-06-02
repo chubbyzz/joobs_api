@@ -3,12 +3,11 @@ class Api::V1::JobsController < ApplicationController
   before_action :authenticate_api_v1_user!, only: [:buy]
 
   def index
-    @products = Job.includes(:main_image)
+    @jobs = Job.where(nil)
 
-    @products = @products.text_search(params[:search]) if params[:search]
-    @products.where!(price: params[:min]..params[:max]) if params[:min] and params[:max]
-    @products.order!(params[:order])
-    @products = @products.paginate(page: params[:page])
+    @jobs = @jobs.text_search(params[:search]) if params[:search]
+    @jobs.order!(params[:order])
+    @jobs = @jobs.paginate(page: params[:page])
   end
 
   def info
@@ -16,10 +15,6 @@ class Api::V1::JobsController < ApplicationController
   end
 
   def find
-    @product = Job.includes(:images).order('images.path').friendly.find(params[:slug])
-  end
-
-  def buy
-    @user = current_api_v1_user
+    @job = Job.friendly.find(params[:slug])
   end
 end

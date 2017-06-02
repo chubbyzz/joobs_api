@@ -85,7 +85,7 @@ ActiveRecord::Schema.define(version: 20160828013623) do
     t.string   "nickname"
     t.string   "image"
     t.string   "email"
-    t.json     "tokens"
+    t.string   "tokens"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "profile_id"

@@ -3,16 +3,22 @@ default: &default
 development:
   <<: *default
   adapter: postgresql
+  username: jeff
+  password: senhadojeff12
   encoding: unicode
   database: joobs
+  port: 5433
   pool: 5
   timeout: 5000
 
 test:
   <<: *default
   adapter: postgresql
+  username: jeff
+  password: senhadojeff12
   encoding: unicode
   database: joobs_test
+  port: 5433
   pool: 5
   timeout: 5000
 
