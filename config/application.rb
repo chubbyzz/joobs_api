@@ -15,6 +15,10 @@ module DbStore
       config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
     end
 
+    config.i18n.available_locales = ['pt-BR', :en]
+
+    config.i18n.default_locale = 'pt-BR'
+
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'

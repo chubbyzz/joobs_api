@@ -1,0 +1,2712 @@
+[2017-06-04 11:53:40] INFO  WEBrick 1.3.1
+[2017-06-04 11:53:40] INFO  ruby 2.3.1 (2016-04-26) [x86_64-linux-gnu]
+[2017-06-04 11:53:40] INFO  WEBrick::HTTPServer#start: pid=7454 port=4000
+A server is already running. Check /home/jeff/dev/joobs_api/tmp/pids/server.pid.
+=> Booting WEBrick
+=> Rails 4.2.5.1 application starting in development on http://localhost:4000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+Exiting
+A server is already running. Check /home/jeff/dev/joobs_api/tmp/pids/server.pid.
+=> Booting WEBrick
+=> Rails 4.2.5.1 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+Exiting
+=> Booting WEBrick
+=> Rails 4.2.5.1 application starting in development on http://localhost:4000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-04 11:56:41 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (30.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /var/lib/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 44ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-04 11:57:24 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /var/lib/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 11:57:27 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (36.4ms)
+Completed 200 OK in 71ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jobs/info" for 127.0.0.1 at 2017-06-04 11:57:27 -0300
+Processing by Api::V1::JobsController#info as JSON
+  [1m[35m (31.4ms)[0m  SELECT MAX("jobs"."until_salary") FROM "jobs"
+  [1m[36m (0.4ms)[0m  [1mSELECT MIN("jobs"."start_salary") FROM "jobs"[0m
+  Rendered api/v1/jobs/info.json.jbuilder (0.3ms)
+Completed 200 OK in 173ms (Views: 3.2ms | ActiveRecord: 72.0ms)
+
+
+Started GET "/api/v1/jobs/1" for 127.0.0.1 at 2017-06-04 11:57:27 -0300
+Processing by Api::V1::JobsController#index as JSON
+  Parameters: {"page"=>"1"}
+  Rendered api/v1/jobs/index.json.jbuilder (0.3ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 16:56:56 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 11ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jobs/info" for 127.0.0.1 at 2017-06-04 16:56:56 -0300
+Processing by Api::V1::JobsController#info as JSON
+  [1m[35m (0.3ms)[0m  SELECT MAX("jobs"."until_salary") FROM "jobs"
+  [1m[36m (0.3ms)[0m  [1mSELECT MIN("jobs"."start_salary") FROM "jobs"[0m
+  Rendered api/v1/jobs/info.json.jbuilder (0.1ms)
+Completed 200 OK in 45ms (Views: 2.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/jobs/1" for 127.0.0.1 at 2017-06-04 16:56:56 -0300
+Processing by Api::V1::JobsController#index as JSON
+  Parameters: {"page"=>"1"}
+  Rendered api/v1/jobs/index.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 16:56:57 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jobs/info" for 127.0.0.1 at 2017-06-04 16:56:58 -0300
+Processing by Api::V1::JobsController#info as JSON
+  [1m[35m (0.7ms)[0m  SELECT MAX("jobs"."until_salary") FROM "jobs"
+  [1m[36m (0.7ms)[0m  [1mSELECT MIN("jobs"."start_salary") FROM "jobs"[0m
+  Rendered api/v1/jobs/info.json.jbuilder (0.1ms)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/v1/jobs/1" for 127.0.0.1 at 2017-06-04 16:56:58 -0300
+Processing by Api::V1::JobsController#index as JSON
+  Parameters: {"page"=>"1"}
+  Rendered api/v1/jobs/index.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 16:58:32 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 16:58:37 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:00:00 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:00:29 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:00:47 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:01:01 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:01:02 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:01:03 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:01:03 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:01:04 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:02:07 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:02:45 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:02:49 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:02:59 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:03:01 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:03:43 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:04:14 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:04:20 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:04:21 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:04:52 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:04:53 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:06:06 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:06:09 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:07:34 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:07:48 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:07:51 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:08:00 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:09:04 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.3ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:09:32 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:09:35 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:11:06 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:11:30 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:11:31 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.6ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:11:48 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:11:49 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:11:51 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:11:58 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.3ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:12:04 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:12:06 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:12:31 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.3ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:12:33 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:13:12 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:13:16 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:13:18 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:19:18 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 12ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:19:25 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:19:28 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:20:16 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.3ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:20:32 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:20:32 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:20:40 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:21:00 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:21:01 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:21:10 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:21:11 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:21:15 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:21:26 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:21:26 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:21:30 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:21:30 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.5ms)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:22:19 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:22:21 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:22:44 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:23:01 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:29:24 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:29:43 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:30:13 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:30:35 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:30:59 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:31:28 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:31:36 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:31:54 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:40:18 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 7ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jobs/info" for 127.0.0.1 at 2017-06-04 17:40:18 -0300
+Processing by Api::V1::JobsController#info as JSON
+  [1m[35m (1.9ms)[0m  SELECT MAX("jobs"."until_salary") FROM "jobs"
+  [1m[36m (0.5ms)[0m  [1mSELECT MIN("jobs"."start_salary") FROM "jobs"[0m
+  Rendered api/v1/jobs/info.json.jbuilder (0.2ms)
+Completed 200 OK in 18ms (Views: 5.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/v1/jobs/1" for 127.0.0.1 at 2017-06-04 17:40:18 -0300
+Processing by Api::V1::JobsController#index as JSON
+  Parameters: {"page"=>"1"}
+  Rendered api/v1/jobs/index.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-04 17:40:19 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /var/lib/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/bitcoin" for 127.0.0.1 at 2017-06-04 17:40:22 -0300
+
+ActionController::RoutingError (No route matches [GET] "/api/bitcoin"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (29.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (157.5ms)
+
+
+Started GET "/api/v1/addresses/state" for 127.0.0.1 at 2017-06-04 17:40:33 -0300
+Processing by Api::V1::AddressesController#state as JSON
+  [1m[35m (0.5ms)[0m  SELECT "states"."name", "states"."id" FROM "states"
+  Rendered api/v1/addresses/state.json.jbuilder (0.3ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.5ms)
+
+SyntaxError (/home/jeff/dev/joobs_api/app/views/api/v1/addresses/state.json.jbuilder:1: syntax error, unexpected ','
+....new(self); json.(@states, id:, :name)
+...                               ^):
+  app/views/api/v1/addresses/state.json.jbuilder:1: syntax error, unexpected ','
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.9ms)
+
+
+Started GET "/api/v1/addresses/state" for 127.0.0.1 at 2017-06-04 17:40:48 -0300
+Processing by Api::V1::AddressesController#state as JSON
+  [1m[36m (0.4ms)[0m  [1mSELECT "states"."name", "states"."id" FROM "states"[0m
+  Rendered api/v1/addresses/state.json.jbuilder (3.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `id' for #<Array:0x000000039a6188>):
+    1: json.(@states, :id, :name)
+  app/views/api/v1/addresses/state.json.jbuilder:1:in `_app_views_api_v__addresses_state_json_jbuilder__124270501215855718_30198720'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.9ms)
+
+
+Started GET "/api/v1/addresses/state" for 127.0.0.1 at 2017-06-04 17:41:09 -0300
+Processing by Api::V1::AddressesController#state as JSON
+  [1m[35mState Load (0.3ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/state.json.jbuilder (11.3ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.5ms)
+
+ActionView::Template::Error (undefined method `id' for #<State::ActiveRecord_Relation:0x00000003e7baa0>
+Did you mean?  ids):
+    1: json.(@states, :id, :name)
+  app/views/api/v1/addresses/state.json.jbuilder:1:in `_app_views_api_v__addresses_state_json_jbuilder__124270501215855718_30198720'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.1ms)
+
+
+Started GET "/api/v1/addresses/state" for 127.0.0.1 at 2017-06-04 17:42:05 -0300
+Processing by Api::V1::AddressesController#state as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/state.json.jbuilder (3.5ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/addresses/state/25/cities" for 127.0.0.1 at 2017-06-04 17:42:18 -0300
+Processing by Api::V1::AddressesController#cities as JSON
+  Parameters: {"id"=>"25"}
+  [1m[35mState Load (0.4ms)[0m  SELECT  "states".* FROM "states" WHERE "states"."id" = $1 LIMIT 1  [["id", 25]]
+  [1m[36mCity Load (176.4ms)[0m  [1mSELECT "cities".* FROM "cities" WHERE "cities"."state_id" IN (25)[0m
+  Rendered api/v1/addresses/cities.json.jbuilder (1.6ms)
+Completed 500 Internal Server Error in 471ms (ActiveRecord: 178.2ms)
+
+ActionView::Template::Error (Can't merge [{"id"=>4786, "name"=>"Umbaúba"}, {"id"=>4785, "name"=>"Tomar do Geru"}, {"id"=>4784, "name"=>"Tobias Barreto"}, {"id"=>4783, "name"=>"Telha"}, {"id"=>4782, "name"=>"Siriri"}, {"id"=>4781, "name"=>"Simão Dias"}, {"id"=>4780, "name"=>"São Miguel do Aleixo"}, {"id"=>4779, "name"=>"São Francisco"}, {"id"=>4778, "name"=>"São Domingos"}, {"id"=>4777, "name"=>"São Cristóvão"}, {"id"=>4776, "name"=>"Santo Amaro das Brotas"}, {"id"=>4775, "name"=>"Santana do São Francisco"}, {"id"=>4774, "name"=>"Santa Rosa de Lima"}, {"id"=>4773, "name"=>"Santa Luzia do Itanhy"}, {"id"=>4772, "name"=>"Salgado"}, {"id"=>4771, "name"=>"Rosário do Catete"}, {"id"=>4770, "name"=>"Ribeirópolis"}, {"id"=>4769, "name"=>"Riachuelo"}, {"id"=>4768, "name"=>"Riachão do Dantas"}, {"id"=>4767, "name"=>"Propriá"}, {"id"=>4766, "name"=>"Porto da Folha"}, {"id"=>4765, "name"=>"Poço Verde"}, {"id"=>4764, "name"=>"Poço Redondo"}, {"id"=>4763, "name"=>"Pirambu"}, {"id"=>4762, "name"=>"Pinhão"}, {"id"=>4761, "name"=>"Pedrinhas"}, {"id"=>4760, "name"=>"Pedra Mole"}, {"id"=>4759, "name"=>"Pacatuba"}, {"id"=>4758, "name"=>"Nossa Senhora do Socorro"}, {"id"=>4757, "name"=>"Nossa Senhora de Lourdes"}, {"id"=>4756, "name"=>"Nossa Senhora das Dores"}, {"id"=>4755, "name"=>"Nossa Senhora da Glória"}, {"id"=>4754, "name"=>"Nossa Senhora Aparecida"}, {"id"=>4753, "name"=>"Neópolis"}, {"id"=>4752, "name"=>"Muribeca"}, {"id"=>4751, "name"=>"Monte Alegre de Sergipe"}, {"id"=>4750, "name"=>"Moita Bonita"}, {"id"=>4749, "name"=>"Maruim"}, {"id"=>4748, "name"=>"Malhador"}, {"id"=>4747, "name"=>"Malhada dos Bois"}, {"id"=>4746, "name"=>"Macambira"}, {"id"=>4745, "name"=>"Laranjeiras"}, {"id"=>4744, "name"=>"Lagarto"}, {"id"=>4743, "name"=>"Japoatã"}, {"id"=>4742, "name"=>"Japaratuba"}, {"id"=>4741, "name"=>"Itaporanga d`Ajuda"}, {"id"=>4740, "name"=>"Itabi"}, {"id"=>4739, "name"=>"Itabaianinha"}, {"id"=>4738, "name"=>"Itabaiana"}, {"id"=>4737, "name"=>"Indiaroba"}, {"id"=>4736, "name"=>"Ilha das Flores"}, {"id"=>4735, "name"=>"Gracho Cardoso"}, {"id"=>4734, "name"=>"General Maynard"}, {"id"=>4733, "name"=>"Gararu"}, {"id"=>4732, "name"=>"Frei Paulo"}, {"id"=>4731, "name"=>"Feira Nova"}, {"id"=>4730, "name"=>"Estância"}, {"id"=>4729, "name"=>"Divina Pastora"}, {"id"=>4728, "name"=>"Cumbe"}, {"id"=>4727, "name"=>"Cristinápolis"}, {"id"=>4726, "name"=>"Cedro de São João"}, {"id"=>4725, "name"=>"Carmópolis"}, {"id"=>4724, "name"=>"Carira"}, {"id"=>4723, "name"=>"Capela"}, {"id"=>4722, "name"=>"Canindé de São Francisco"}, {"id"=>4721, "name"=>"Canhoba"}, {"id"=>4720, "name"=>"Campo do Brito"}, {"id"=>4719, "name"=>"Brejo Grande"}, {"id"=>4718, "name"=>"Boquim"}, {"id"=>4717, "name"=>"Barra dos Coqueiros"}, {"id"=>4716, "name"=>"Areia Branca"}, {"id"=>4715, "name"=>"Arauá"}, {"id"=>4714, "name"=>"Aracaju"}, {"id"=>4713, "name"=>"Aquidabã"}, {"id"=>4712, "name"=>"Amparo de São Francisco"}] into {"state"=>"Sergipe"}):
+    1: json.state @state.name
+    2: json.array!(@cities, :id, :name)
+  app/views/api/v1/addresses/cities.json.jbuilder:2:in `_app_views_api_v__addresses_cities_json_jbuilder___2230635718727089942_29678360'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.6ms)
+
+
+Started GET "/api/v1/addresses/state/25/cities" for 127.0.0.1 at 2017-06-04 17:42:37 -0300
+Processing by Api::V1::AddressesController#cities as JSON
+  Parameters: {"id"=>"25"}
+  [1m[35mState Load (0.2ms)[0m  SELECT  "states".* FROM "states" WHERE "states"."id" = $1 LIMIT 1  [["id", 25]]
+  [1m[36mCity Load (0.9ms)[0m  [1mSELECT "cities".* FROM "cities" WHERE "cities"."state_id" IN (25)[0m
+  Rendered api/v1/addresses/cities.json.jbuilder (4.3ms)
+Completed 200 OK in 14ms (Views: 5.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:44:04 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:44:14 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:44:15 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:44:22 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:44:27 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:44:39 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:44:43 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:44:46 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:44:47 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:44:51 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.4ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:45:13 -0300
+Processing by Api::V1::AddressesController#states as JSON
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template api/v1/addresses/states, application/states with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder]}. Searched in:
+  * "/home/jeff/dev/joobs_api/app/views"
+  * "/var/lib/gems/2.3.0/gems/devise_token_auth-0.1.42/app/views"
+  * "/var/lib/gems/2.3.0/gems/devise-3.5.10/app/views"
+):
+  actionview (4.2.5.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.5.1) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.5.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.5.1) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.5.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.5.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.5.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.5.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  activerecord (4.2.5.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (20.3ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:45:33 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.3ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (7.7ms)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:46:08 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:46:15 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:46:25 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:46:35 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:46:40 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:46:55 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:47:01 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:47:57 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:48:01 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:48:23 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:48:24 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:49:36 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:49:46 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:49:58 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:50:04 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:51:12 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:51:25 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:51:26 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:51:38 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:51:46 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:52:28 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:52:29 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:52:59 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:53:04 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:53:07 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:53:25 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:53:41 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:53:59 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:54:08 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:54:10 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:54:13 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.3ms)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:54:18 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:54:25 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.9ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:54:26 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (2.1ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (4.3ms)
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:55:17 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:55:17 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (1.3ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (5.0ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:55:25 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:55:25 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (3.2ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:55:33 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:55:34 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.3ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (1.7ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:55:49 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.3ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:55:49 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (1.8ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:56:06 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:56:06 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.4ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (3.9ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:56:08 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:56:08 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.5ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (3.0ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:56:11 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:56:11 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.3ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (1.8ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:56:14 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:56:14 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.3ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (1.7ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:56:30 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:56:30 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.3ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (2.6ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:56:38 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:56:39 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.3ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (3.0ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:56:53 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:56:53 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.5ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (3.4ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:57:59 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:58:00 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.3ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (2.4ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:58:06 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:58:06 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.4ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (2.4ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:58:09 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:58:09 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (2.2ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:58:16 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:58:17 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.4ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (3.9ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:58:18 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.3ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:58:19 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (4.6ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:58:23 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:58:23 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.4ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (3.2ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:58:33 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:58:33 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.3ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (1.8ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:58:49 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:58:49 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.6ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (3.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:59:08 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:59:09 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.5ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (3.3ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 17:59:43 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 17:59:43 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.3ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (1.9ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:01:08 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:01:08 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (3.0ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:02:47 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:02:48 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.4ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (2.7ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:02:52 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:02:53 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.5ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (3.6ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:03:25 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:03:25 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.4ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (2.8ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:03:26 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:03:27 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.3ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (2.1ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:03:31 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:03:31 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.6ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (4.5ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:03:38 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:03:38 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (3.5ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:03:40 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:03:40 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.4ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (3.5ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:04:30 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:04:31 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (2.9ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:04:39 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:04:40 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.4ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (3.0ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:05:12 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:05:12 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.5ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (3.0ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:05:42 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:05:43 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.6ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (3.4ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:05:46 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:05:46 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.3ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (2.5ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:05:49 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:05:49 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.4ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (2.9ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:06:00 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:06:00 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (1.0ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (4.6ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:06:57 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:06:57 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.4ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (2.9ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:07:00 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:07:00 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (2.3ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:07:51 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:07:52 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.4ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (2.3ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:08:18 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:08:18 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (3.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/addresses/state3/cities" for 127.0.0.1 at 2017-06-04 18:08:28 -0300
+
+ActionController::RoutingError (No route matches [GET] "/api/v1/addresses/state3/cities"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.1ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:08:41 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:08:41 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.3ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (1.9ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/addresses/state/3/cities" for 127.0.0.1 at 2017-06-04 18:08:51 -0300
+Processing by Api::V1::AddressesController#cities as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT  "states".* FROM "states" WHERE "states"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCity Load (9.7ms)[0m  SELECT "cities".* FROM "cities" WHERE "cities"."state_id" IN (3)
+  Rendered api/v1/addresses/cities.json.jbuilder (1.9ms)
+Completed 200 OK in 24ms (Views: 2.5ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:09:06 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:09:07 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (3.0ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:09:10 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:09:11 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.3ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (2.9ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/addresses/state/2/cities" for 127.0.0.1 at 2017-06-04 18:09:21 -0300
+Processing by Api::V1::AddressesController#cities as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT  "states".* FROM "states" WHERE "states"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCity Load (17.4ms)[0m  SELECT "cities".* FROM "cities" WHERE "cities"."state_id" IN (2)
+  Rendered api/v1/addresses/cities.json.jbuilder (3.6ms)
+Completed 200 OK in 31ms (Views: 4.2ms | ActiveRecord: 19.2ms)
+
+
+Started GET "/api/v1/addresses/state/26/cities" for 127.0.0.1 at 2017-06-04 18:09:29 -0300
+Processing by Api::V1::AddressesController#cities as JSON
+  Parameters: {"id"=>"26"}
+  [1m[36mState Load (0.3ms)[0m  [1mSELECT  "states".* FROM "states" WHERE "states"."id" = $1 LIMIT 1[0m  [["id", 26]]
+  [1m[35mCity Load (43.2ms)[0m  SELECT "cities".* FROM "cities" WHERE "cities"."state_id" IN (26)
+  Rendered api/v1/addresses/cities.json.jbuilder (26.5ms)
+Completed 200 OK in 87ms (Views: 27.2ms | ActiveRecord: 43.5ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:10:14 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:10:14 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (2.6ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:10:15 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:10:16 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (1.2ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (5.7ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:10:29 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:10:29 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.3ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (3.2ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:10:55 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.7ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:10:55 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.3ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (3.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:11:13 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:11:13 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.3ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (2.6ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:11:17 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:11:18 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.4ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (3.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:11:22 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:11:23 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (1.9ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:11:41 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:11:42 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.3ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (2.3ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 18:11:48 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: user_company):
+  app/controllers/api/v1/companies_controller.rb:17:in `user_company_params'
+  app/controllers/api/v1/companies_controller.rb:9:in `set_company_user'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.6ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:12:59 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:12:59 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (1.0ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (4.1ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 18:13:08 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: user_company):
+  app/controllers/api/v1/companies_controller.rb:17:in `user_company_params'
+  app/controllers/api/v1/companies_controller.rb:9:in `set_company_user'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.5ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:13:45 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:13:45 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.4ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (3.2ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:13:54 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:13:54 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (4.1ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 18:14:03 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"company_user"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: user_company):
+  app/controllers/api/v1/companies_controller.rb:17:in `user_company_params'
+  app/controllers/api/v1/companies_controller.rb:9:in `set_company_user'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.6ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:14:20 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:14:20 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.9ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (3.3ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 18:14:24 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: user_company):
+  app/controllers/api/v1/companies_controller.rb:17:in `user_company_params'
+  app/controllers/api/v1/companies_controller.rb:9:in `set_company_user'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.5ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:14:33 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:14:34 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.3ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (3.0ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:14:35 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:14:35 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.7ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (3.3ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:14:49 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:14:55 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:14:56 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (3.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:15:02 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:15:02 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.6ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (2.5ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 18:15:11 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: user_company):
+  app/controllers/api/v1/companies_controller.rb:17:in `user_company_params'
+  app/controllers/api/v1/companies_controller.rb:9:in `set_company_user'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.8ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:16:03 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:16:03 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (3.2ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 18:16:08 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: user_company):
+  app/controllers/api/v1/companies_controller.rb:17:in `user_company_params'
+  app/controllers/api/v1/companies_controller.rb:9:in `set_company_user'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.2ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:16:35 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:16:35 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.3ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (2.9ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:17:42 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:17:50 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:17:50 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (1.9ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:18:05 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:18:05 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.5ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (2.4ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:18:47 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:18:47 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (3.1ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 18:18:52 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (34.9ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", ""]]
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", ""]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", ""]]
+  Rendered api/v1/companies/create.json.jbuilder (4.1ms)
+Completed 400 Bad Request in 316ms (Views: 7.8ms | ActiveRecord: 40.3ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:19:24 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:19:24 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.6ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (3.4ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:19:30 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:19:31 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.4ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (3.2ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:19:44 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:19:45 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.3ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (3.2ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 18:19:50 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", ""]]
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", ""]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", ""]]
+  Rendered api/v1/companies/create.json.jbuilder (7.0ms)
+Completed 400 Bad Request in 15ms (Views: 7.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:20:11 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:20:12 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.6ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (4.2ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:20:15 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.3ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:20:15 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.3ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (3.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 18:20:19 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", ""]]
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", ""]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", ""]]
+  Rendered api/v1/companies/create.json.jbuilder (6.5ms)
+Completed 400 Bad Request in 15ms (Views: 6.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:20:25 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:20:26 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (1.2ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (3.8ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:20:40 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:20:40 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (2.1ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:20:55 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:20:55 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.9ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (3.7ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 18:20:58 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", ""]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", ""]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", ""]]
+  Rendered api/v1/companies/create.json.jbuilder (7.9ms)
+Completed 400 Bad Request in 17ms (Views: 9.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:21:33 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:21:34 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.3ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (2.1ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 18:22:32 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", ""]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", ""]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", ""]]
+  Rendered api/v1/companies/create.json.jbuilder (8.4ms)
+Completed 400 Bad Request in 16ms (Views: 9.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:23:28 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:23:28 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.4ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (2.4ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 18:23:34 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", ""]]
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", ""]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", ""]]
+  Rendered api/v1/companies/create.json.jbuilder (4.9ms)
+Completed 400 Bad Request in 14ms (Views: 5.3ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 18:24:09 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"a@a.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>"dadasdas"}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "a@a.com"]]
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "a@a.com"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", "a@a.com"]]
+  Rendered api/v1/companies/create.json.jbuilder (3.3ms)
+Completed 400 Bad Request in 11ms (Views: 4.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 18:24:19 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"a@a.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>"dadasdas"}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", "a@a.com"]]
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", "a@a.com"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "a@a.com"]]
+  Rendered api/v1/companies/create.json.jbuilder (4.2ms)
+Completed 400 Bad Request in 113ms (Views: 4.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 18:24:29 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"a@a.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>"dadasdas"}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "a@a.com"]]
+  [1m[35mSQL (26.6ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "dadasdas"], ["created_at", "2017-06-04 21:24:29.387689"], ["updated_at", "2017-06-04 21:24:29.387689"]]
+  [1m[36mSQL (15.5ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "tokens", "profile_type", "profile_id", "uid", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "a@a.com"], ["encrypted_password", "$2a$10$b9jSI04rwG6bAqaE3tiwOueqiEX5J7R2HNdpwrvu0vbnEqz0GUYP6"], ["tokens", "{}"], ["profile_type", "Company"], ["profile_id", 1], ["uid", "a@a.com"], ["created_at", "2017-06-04 21:24:29.420700"], ["updated_at", "2017-06-04 21:24:29.420700"]]
+  [1m[35m (39.6ms)[0m  COMMIT
+  Rendered api/v1/companies/create.json.jbuilder (10.3ms)
+Completed 500 Internal Server Error in 181ms (ActiveRecord: 82.3ms)
+
+ActionView::Template::Error (undefined method `prodile' for #<User:0x00000003974bd8>
+Did you mean?  profile
+               profile=):
+    1: json.success @user.valid?
+    2: if @user.valid?
+    3:     json.name @user.prodile.name
+    4:     json.email @user.email
+    5: else
+    6:   json.errors @user.errors
+  app/views/api/v1/companies/create.json.jbuilder:3:in `_app_views_api_v__companies_create_json_jbuilder__2364381125934678053_36472380'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:24:55 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:24:55 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (8.7ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 18:29:15 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `company' for #<Api::V1::CompaniesController:0x000000043e86c8>
+Did you mean?  @company):
+  app/controllers/api/v1/companies_controller.rb:16:in `set_company_user'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.8ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 18:29:53 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `company' for #<Api::V1::CompaniesController:0x007f4d80fc7860>
+Did you mean?  @company):
+  app/controllers/api/v1/companies_controller.rb:18:in `set_company_user'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.8ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 18:30:02 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", ""]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", ""]]
+  Rendered api/v1/companies/create.json.jbuilder (5.6ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `erros' for #<Company id: nil, name: "", created_at: nil, updated_at: nil>
+Did you mean?  errors):
+    3:     json.name @user.profile.name
+    4:     json.email @user.email
+    5: else
+    6:   json.errors(@user.errors + @company.erros + @address.erros)
+    7: end
+  app/views/api/v1/companies/create.json.jbuilder:6:in `_app_views_api_v__companies_create_json_jbuilder__2364381125934678053_69985432838760'
+  app/controllers/api/v1/companies_controller.rb:9:in `create'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.6ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 18:30:24 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", ""]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", ""]]
+  Rendered api/v1/companies/create.json.jbuilder (5.8ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `+' for #<ActiveModel::Errors:0x007f4d817a1a68>):
+    3:     json.name @user.profile.name
+    4:     json.email @user.email
+    5: else
+    6:   json.errors(@user.errors + @company.errors + @address.errors)
+    7: end
+  app/views/api/v1/companies/create.json.jbuilder:6:in `_app_views_api_v__companies_create_json_jbuilder__2364381125934678053_69985430561000'
+  app/controllers/api/v1/companies_controller.rb:9:in `create'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.5ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 18:32:24 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", ""]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", ""]]
+  Rendered api/v1/companies/create.json.jbuilder (5.4ms)
+Completed 400 Bad Request in 12ms (Views: 6.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:34:04 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:34:05 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.4ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (6.6ms)
+Completed 200 OK in 13ms (Views: 8.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:34:08 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:34:08 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (3.2ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:34:13 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:34:14 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.4ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (2.2ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:34:16 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.2ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:34:16 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (3.4ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:34:22 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:34:22 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[35mState Load (0.3ms)[0m  SELECT "states".* FROM "states"
+  Rendered api/v1/addresses/states.json.jbuilder (2.5ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 18:34:24 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 18:34:24 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (2.7ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 18:34:28 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", ""]]
+  Rendered api/v1/companies/create.json.jbuilder (1.4ms)
+Completed 400 Bad Request in 7ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 21:14:27 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (15.7ms)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 21:14:27 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.3ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (1.8ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 21:16:26 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", ""]]
+  Rendered api/v1/companies/create.json.jbuilder (1.0ms)
+Completed 400 Bad Request in 36ms (Views: 31.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 21:16:31 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", ""]]
+  Rendered api/v1/companies/create.json.jbuilder (1.2ms)
+Completed 400 Bad Request in 8ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 21:16:31 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", ""]]
+  Rendered api/v1/companies/create.json.jbuilder (0.9ms)
+Completed 400 Bad Request in 8ms (Views: 2.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 21:16:32 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", ""]]
+  Rendered api/v1/companies/create.json.jbuilder (1.1ms)
+Completed 400 Bad Request in 7ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 21:16:45 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", ""]]
+  Rendered api/v1/companies/create.json.jbuilder (0.8ms)
+Completed 400 Bad Request in 6ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 21:17:20 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"jeff@rossi", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "jeff@rossi"]]
+  Rendered api/v1/companies/create.json.jbuilder (0.7ms)
+Completed 400 Bad Request in 112ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 21:17:30 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"jeff@rossi", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", "jeff@rossi"]]
+  Rendered api/v1/companies/create.json.jbuilder (0.5ms)
+Completed 400 Bad Request in 91ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 21:17:35 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"jeff@rossi.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "jeff@rossi.com"]]
+  [1m[35m (7.1ms)[0m  BEGIN
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "jeff@rossi.com"]]
+  [1m[35mSQL (22.2ms)[0m  INSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", ""], ["created_at", "2017-06-05 00:17:35.830372"], ["updated_at", "2017-06-05 00:17:35.830372"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "tokens", "profile_type", "profile_id", "uid", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "jeff@rossi.com"], ["encrypted_password", "$2a$10$QzkuJ9rpcQXHB6JBQRnFXe/Yr91KV5mTLlO3i8GQXabxlh340g3YW"], ["tokens", "{}"], ["profile_type", "Company"], ["profile_id", 2], ["uid", "jeff@rossi.com"], ["created_at", "2017-06-05 00:17:35.906351"], ["updated_at", "2017-06-05 00:17:35.906351"]]
+  [1m[35m (37.7ms)[0m  COMMIT
+  Rendered api/v1/companies/create.json.jbuilder (0.2ms)
+Completed 400 Bad Request in 278ms (Views: 1.0ms | ActiveRecord: 117.4ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 21:17:51 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"jeff@rossi.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "jeff@rossi.com"]]
+  Rendered api/v1/companies/create.json.jbuilder (1.0ms)
+Completed 400 Bad Request in 96ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 21:20:56 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"jeff@rossi.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", "jeff@rossi.com"]]
+  Rendered api/v1/companies/create.json.jbuilder (0.4ms)
+Completed 400 Bad Request in 154ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 21:21:01 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"jef2f@rossi.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "jef2f@rossi.com"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "jef2f@rossi.com"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "tokens", "profile_type", "uid", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["email", "jef2f@rossi.com"], ["encrypted_password", "$2a$10$6ej8SGLxW9KLzV1g/ksS7OvHB.p9dPFJrYC9z3Q7wzfXHuyjHfLXe"], ["tokens", "{}"], ["profile_type", "Company"], ["uid", "jef2f@rossi.com"], ["created_at", "2017-06-05 00:21:01.270692"], ["updated_at", "2017-06-05 00:21:01.270692"]]
+  [1m[36m (15.3ms)[0m  [1mCOMMIT[0m
+  Rendered api/v1/companies/create.json.jbuilder (0.1ms)
+Completed 400 Bad Request in 116ms (Views: 1.1ms | ActiveRecord: 16.7ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 21:22:04 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"jef2f@rossi.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", "jef2f@rossi.com"]]
+  Rendered api/v1/companies/create.json.jbuilder (0.6ms)
+Completed 400 Bad Request in 137ms (Views: 4.8ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 21:22:05 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"jef2f@rossi.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "jef2f@rossi.com"]]
+  Rendered api/v1/companies/create.json.jbuilder (0.4ms)
+Completed 400 Bad Request in 92ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 21:22:05 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"jef2f@rossi.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", "jef2f@rossi.com"]]
+  Rendered api/v1/companies/create.json.jbuilder (0.6ms)
+Completed 400 Bad Request in 94ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 21:22:12 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"jeff3@rossi.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "jeff3@rossi.com"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "jeff3@rossi.com"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "tokens", "profile_type", "uid", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["email", "jeff3@rossi.com"], ["encrypted_password", "$2a$10$Lq8sHmSQhuYTyLzN7UbizO2O2sucXt7l4gNErccjId5gL8oub/INe"], ["tokens", "{}"], ["profile_type", "Company"], ["uid", "jeff3@rossi.com"], ["created_at", "2017-06-05 00:22:12.190429"], ["updated_at", "2017-06-05 00:22:12.190429"]]
+  [1m[36m (11.8ms)[0m  [1mCOMMIT[0m
+  Rendered api/v1/companies/create.json.jbuilder (0.2ms)
+Completed 400 Bad Request in 110ms (Views: 1.2ms | ActiveRecord: 12.5ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 21:22:13 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"jeff3@rossi.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", "jeff3@rossi.com"]]
+  Rendered api/v1/companies/create.json.jbuilder (1.8ms)
+Completed 400 Bad Request in 96ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 21:22:13 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"jeff3@rossi.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "jeff3@rossi.com"]]
+  Rendered api/v1/companies/create.json.jbuilder (0.5ms)
+Completed 400 Bad Request in 96ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/v1/companies/create" for 127.0.0.1 at 2017-06-04 21:22:13 -0300
+Processing by Api::V1::CompaniesController#create as JSON
+  Parameters: {"user_company"=>{"user"=>{"email"=>"jeff3@rossi.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "company"=>{"name"=>""}, "address"=>{"zipcode"=>"", "city_id"=>"", "district"=>"", "street"=>"", "number"=>""}}}
+[2017-06-04 21:24:23] FATAL SignalException: SIGTERM
+	/usr/lib/ruby/2.3.0/webrick/server.rb:177:in `select'
+	/usr/lib/ruby/2.3.0/webrick/server.rb:177:in `block in start'
+	/usr/lib/ruby/2.3.0/webrick/server.rb:33:in `start'
+	/usr/lib/ruby/2.3.0/webrick/server.rb:164:in `start'
+	/var/lib/gems/2.3.0/gems/rack-1.6.8/lib/rack/handler/webrick.rb:34:in `run'
+	/var/lib/gems/2.3.0/gems/rack-1.6.8/lib/rack/server.rb:287:in `start'
+	/var/lib/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/commands/server.rb:80:in `start'
+	/var/lib/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+	/var/lib/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/commands/commands_tasks.rb:75:in `tap'
+	/var/lib/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/commands/commands_tasks.rb:75:in `server'
+	/var/lib/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	/var/lib/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/commands.rb:17:in `<top (required)>'
+	/home/jeff/dev/joobs_api/bin/rails:9:in `require'
+	/home/jeff/dev/joobs_api/bin/rails:9:in `<top (required)>'
+	/var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/client/rails.rb:28:in `load'
+	/var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/client/rails.rb:28:in `call'
+	/var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/client/command.rb:7:in `call'
+	/var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/client.rb:30:in `run'
+	/var/lib/gems/2.3.0/gems/spring-2.0.2/bin/spring:49:in `<top (required)>'
+	/var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/binstub.rb:31:in `load'
+	/var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/binstub.rb:31:in `<top (required)>'
+	/usr/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:68:in `require'
+	/usr/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:68:in `require'
+	/home/jeff/dev/joobs_api/bin/spring:13:in `<top (required)>'
+	bin/rails:3:in `load'
+	bin/rails:3:in `<main>'
+[2017-06-04 21:24:23] INFO  going to shutdown ...
+[2017-06-04 21:24:23] INFO  WEBrick::HTTPServer#start done.
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2  [["provider", "email"], ["email", "jeff3@rossi.com"]]
+  Rendered api/v1/companies/create.json.jbuilder (0.6ms)
+Completed 400 Bad Request in 95ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2017-06-04 21:22:44 -0300
+Processing by Api::V1::UsersController#current as JSON
+  Rendered api/v1/users/current.json.jbuilder (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/addresses/states" for 127.0.0.1 at 2017-06-04 21:22:44 -0300
+Processing by Api::V1::AddressesController#states as JSON
+  [1m[36mState Load (0.5ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered api/v1/addresses/states.json.jbuilder (7.9ms)
+Completed 200 OK in 29ms (Views: 10.1ms | ActiveRecord: 2.3ms)
+Exiting

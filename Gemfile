@@ -27,12 +27,16 @@ gem 'devise_token_auth'
 
 gem 'correios-cep'
 
+gem 'carrierwave', '~> 1.0'
+
 group :test do
   gem 'rspec-rails', '~> 3.4'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'factory_girl_rails'
   gem 'faker', github: 'stympy/faker'
 end
+
+gem 'pry-rails', :group => :development
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

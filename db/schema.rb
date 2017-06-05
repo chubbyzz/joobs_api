@@ -11,10 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160828013623) do
+ActiveRecord::Schema.define(version: 20170603213625) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "addresses", force: :cascade do |t|
+    t.integer  "city_id"
+    t.string   "zipcode"
+    t.string   "district"
+    t.string   "street"
+    t.integer  "number"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "source_id"
+    t.string   "source_type"
+  end
+
+  add_index "addresses", ["city_id"], name: "index_addresses_on_city_id", using: :btree
 
   create_table "applications", force: :cascade do |t|
     t.datetime "created_at",                       null: false
@@ -27,6 +41,15 @@ ActiveRecord::Schema.define(version: 20160828013623) do
   add_index "applications", ["job_id"], name: "index_applications_on_job_id", using: :btree
   add_index "applications", ["jobseeker_id"], name: "index_applications_on_jobseeker_id", using: :btree
 
+  create_table "cities", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "state_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "cities", ["state_id"], name: "index_cities_on_state_id", using: :btree
+
   create_table "companies", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at", null: false
@@ -34,14 +57,16 @@ ActiveRecord::Schema.define(version: 20160828013623) do
   end
 
   create_table "images", force: :cascade do |t|
-    t.string   "path",                       null: false
-    t.integer  "product_id"
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
-    t.boolean  "main",       default: false
+    t.string   "file",                        null: false
+    t.integer  "source_id"
+    t.string   "source_type"
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.boolean  "main",        default: false
   end
 
-  add_index "images", ["product_id"], name: "index_images_on_product_id", using: :btree
+  add_index "images", ["source_id"], name: "index_images_on_source_id", using: :btree
+  add_index "images", ["source_type"], name: "index_images_on_source_type", using: :btree
 
   create_table "jobs", force: :cascade do |t|
     t.string   "name",                                                  null: false
@@ -61,6 +86,13 @@ ActiveRecord::Schema.define(version: 20160828013623) do
   create_table "jobseekers", force: :cascade do |t|
     t.string   "cv"
     t.string   "linkedin"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "states", force: :cascade do |t|
+    t.string   "name"
+    t.string   "acronym"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -97,8 +129,9 @@ ActiveRecord::Schema.define(version: 20160828013623) do
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   add_index "users", ["uid", "provider"], name: "index_users_on_uid_and_provider", unique: true, using: :btree
 
+  add_foreign_key "addresses", "cities"
   add_foreign_key "applications", "jobs"
   add_foreign_key "applications", "jobseekers"
-  add_foreign_key "images", "jobs", column: "product_id"
+  add_foreign_key "cities", "states"
   add_foreign_key "jobs", "companies"
 end
