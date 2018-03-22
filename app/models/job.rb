@@ -5,6 +5,8 @@ class Job < ActiveRecord::Base
   has_many :applications
   belongs_to :company
   has_many :jobseekers, through: :applications
+  # has_many :flag_sources, as: :source
+  # has_many :flags, through: :flag_sources
 
   validates_presence_of :name
 

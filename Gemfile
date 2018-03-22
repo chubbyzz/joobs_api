@@ -29,6 +29,8 @@ gem 'correios-cep'
 
 gem 'carrierwave', '~> 1.0'
 
+gem 'state_machines-activerecord'
+
 group :test do
   gem 'rspec-rails', '~> 3.4'
   gem 'shoulda-matchers', '~> 3.1'

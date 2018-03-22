@@ -25,3 +25,6 @@ module BRPopulate
 end
 
 BRPopulate.populate
+
+
+['Ruby', 'Rails', 'Angular', 'React', 'Vue', 'Java', 'C#', 'android', 'Swifit', 'MySql', 'Oracle', 'SQLsever', 'Postgres', 'C', 'C++', 'PHP']

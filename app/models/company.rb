@@ -3,6 +3,6 @@ class Company < ActiveRecord::Base
   has_many :jobs
   has_one :address, as: :source
 
-  validates_presence_of :name, :address
+  validates_presence_of :address
   validates_associated :address
 end

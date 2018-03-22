@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
          :trackable, :validatable, :registerable,
          :omniauthable
 
-  validates_presence_of :profile
+  validates_presence_of :name, :profile
   validates_associated :profile
 
   include DeviseTokenAuth::Concerns::User
